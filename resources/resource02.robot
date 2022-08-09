@@ -24,7 +24,8 @@ Enter email
     Input Text          //*[@id="userEmail"]    arya.stark@winterfell.com
 
 Select Gender
-    Execute Javascript      document.querySelector('input[name="gender"][value="Male"]').click()
+    # Execute Javascript      document.querySelector('input[name="gender"][value="Male"]').click()
+    Click Element       //label[@for='gender-radio-1']
 
 Enter Mobile Number
     Input Text          //*[@id="userNumber"]   555-1234
