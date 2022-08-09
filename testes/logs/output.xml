@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20220809 16:55:52.969" rpa="false" schemaversion="2">
+<suite id="s1" name="Ex02" source="/home/andre-martins/Área de Trabalho/Estudos André/Exercicios de automação/Iniciante/testes/ex02.robot">
+<test id="s1-t1" name="Registrantion Form">
+<kw name="Open link form" library="resource02">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220809 16:55:53.078" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<status status="PASS" starttime="20220809 16:55:53.077" endtime="20220809 16:56:00.164"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220809 16:56:00.165" endtime="20220809 16:56:00.352"/>
+</kw>
+<status status="PASS" starttime="20220809 16:55:53.077" endtime="20220809 16:56:00.353"/>
+</kw>
+<kw name="Enter First Name" library="resource02">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="firstName"]</arg>
+<arg>Arya</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 16:56:00.355" level="INFO">Typing text 'Arya' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220809 16:56:00.354" endtime="20220809 16:56:00.468"/>
+</kw>
+<status status="PASS" starttime="20220809 16:56:00.353" endtime="20220809 16:56:00.468"/>
+</kw>
+<kw name="Enter Last Name" library="resource02">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="lastName"]</arg>
+<arg>Stark</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 16:56:00.469" level="INFO">Typing text 'Stark' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220809 16:56:00.468" endtime="20220809 16:56:00.594"/>
+</kw>
+<status status="PASS" starttime="20220809 16:56:00.468" endtime="20220809 16:56:00.594"/>
+</kw>
+<kw name="Enter email" library="resource02">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="userEmail"]</arg>
+<arg>arya.stark@winterfell.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 16:56:00.595" level="INFO">Typing text 'arya.stark@winterfell.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220809 16:56:00.595" endtime="20220809 16:56:00.819"/>
+</kw>
+<status status="PASS" starttime="20220809 16:56:00.594" endtime="20220809 16:56:00.820"/>
+</kw>
+<kw name="Select Gender" library="resource02">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector('input[name="gender"][value="Male"]').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220809 16:56:00.822" level="INFO">Executing JavaScript:
+document.querySelector('input[name="gender"][value="Male"]').click()
+Without any arguments.</msg>
+<status status="PASS" starttime="20220809 16:56:00.821" endtime="20220809 16:56:00.840"/>
+</kw>
+<status status="PASS" starttime="20220809 16:56:00.820" endtime="20220809 16:56:00.841"/>
+</kw>
+<kw name="Enter Mobile Number" library="resource02">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="userNumber"]</arg>
+<arg>555-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 16:56:00.845" level="INFO">Typing text '555-1234' into text field '//*[@id="userNumber"]'.</msg>
+<status status="PASS" starttime="20220809 16:56:00.844" endtime="20220809 16:56:00.968"/>
+</kw>
+<status status="PASS" starttime="20220809 16:56:00.842" endtime="20220809 16:56:00.969"/>
+</kw>
+<status status="PASS" starttime="20220809 16:55:53.077" endtime="20220809 16:56:00.969"/>
+</test>
+<doc>Student Registration</doc>
+<status status="PASS" starttime="20220809 16:55:52.970" endtime="20220809 16:56:00.970"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex02">Ex02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
